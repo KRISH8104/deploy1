@@ -1,0 +1,64 @@
+/* projects.css */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(180, 111, 111);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e97e7;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007acc;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007acc;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #333;
+  color: white;
+}

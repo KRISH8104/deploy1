@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+  
+</head>
+<body>
+    <div class="contact-card">
+        <h1>Contact Me</h1>
+    
+        <link rel="stylesheet" type="text/css" href="/stylesheets/contact.css">
+        <div class="button-images">
+            <img src="public/images/mail.png" alt="Email" onclick="showForm('email')">
+            <img src="public/images/phone.png" alt="Phone" onclick="showForm('phone')">
+            <img src="public/images/linkedin.png" alt="LinkedIn" onclick="showForm('linkedin')">
+        </div>
+        <div id="email-form" class="contact-form">
+            <h2>Contact via Email</h2>
+            <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+                Name: <input type="text" name="name"><br>
+                Email: <input type="text" name="email"><br>
+                Message:<br>
+                <textarea name="message" rows="5" cols="40"></textarea><br>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+        <div id="phone-form" class="contact-form">
+            <h2>Contact via Phone</h2>
+            <p>Phone: <a href="tel:+16494567890">+1-649-456-7890</a></p>
+
+        </div>
+        <div id="linkedin-form" class="contact-form">
+            <h2>Contact via LinkedIn</h2>
+            <p>LinkedIn Profile: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Your LinkedIn</a></p>
+        </div>
+    </div>
+
+    <script>
+        function showForm(formType) {
+           
+            const forms = document.querySelectorAll('.contact-form');
+            forms.forEach(form => {
+                form.style.display = 'none';
+            });
+
+            
+            const selectedForm = document.getElementById(`${formType}-form`);
+            if (selectedForm) {
+                selectedForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+<footer>
+    
+    <p>&copy; {{ 2023 }} KRISH PATEL | <a href="https://github.com/KRISH8104" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/krish-patel-003708291/" target="_blank">LinkedIn</a></p>
+  </footer>
+</html>
